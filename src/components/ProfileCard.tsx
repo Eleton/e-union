@@ -113,13 +113,13 @@ const ProfileCard = ({
       />
       <div className="absolute inset-0 flex flex-col justify-end text-white">
         {open ? (
-          <div className="absolute inset-0 flex flex-col justify-end gap-6 bg-black/70 p-4 pb-0">
-            <div className="flex flex-col gap-2">
+          <div className="absolute inset-0 flex flex-col justify-end bg-black/70">
+            <div className="flex flex-col gap-2 p-4">
               {bios.hasOwnProperty(candidate.id)
                 ? bios[candidate.id]
                 : candidate.description}
             </div>
-            <div className="flex bg-gradient-to-t from-black pb-4">
+            <div className="flex bg-gradient-to-t from-black p-4">
               <div>
                 <p className="text-xl">
                   <strong>{candidate.name}</strong> {candidate.age}
