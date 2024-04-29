@@ -1,0 +1,20 @@
+Layout:
+En logga för eUnion högst upp. Titel i samma font som någon officiell EU-grej.
+En knapp för att börja om från början.
+Superswipes. Man börjar med 3, använder man en superswipe så blir det dubbla poängen.
+
+Startsida:
+Information om när det är EU-val och en knapp för att starta.
+
+Profiler:
+Namn
+Ålder
+Sysselsättning
+Beskrivning av person
+Beskrivning av politik
+
+Slutsida:
+Berättar att testet är slut och att du kan välja att se ditt resultat.
+
+Resultat:
+Visar om du har 0%, 50% eller 100% på respektive parti.
