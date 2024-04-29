@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type Party =
   | "S"
   | "M"
@@ -24,6 +26,6 @@ export type Candidate = {
   party: Party;
   age: number;
   occupation: string;
-  description: string;
+  description: ReactNode;
   swiped: Direction;
 };

@@ -37,8 +37,8 @@ const PartyStat = ({ value, party }: { value: number; party: Party }) => (
         className="absolute h-4 w-1/2 opacity-15"
         style={{ backgroundColor: partyColors[party] }}
       />
-      <div className="absolute h-4 w-1/2 border border-black/50" />
-      <div className="absolute left-1/2 -translate-y-[2px] pl-2 text-sm">
+      <div className="absolute h-4 w-1/2 border border-black/30" />
+      <div className="absolute left-1/2 -translate-y-[2px] pl-2 text-sm text-black/80">
         {party} - {value}%
       </div>
     </div>

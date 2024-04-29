@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Candidate, Direction } from "@/types";
+import bios from "@/bios";
 
 const DELAY = 250;
 
@@ -112,8 +113,12 @@ const ProfileCard = ({
       />
       <div className="absolute inset-0 flex flex-col justify-end text-white">
         {open ? (
-          <div className="absolute inset-0 flex flex-col justify-between bg-black/70 p-4 pb-0">
-            <div>{candidate.description}</div>
+          <div className="absolute inset-0 flex flex-col justify-end gap-6 bg-black/70 p-4 pb-0">
+            <div className="flex flex-col gap-2">
+              {bios.hasOwnProperty(candidate.id)
+                ? bios[candidate.id]
+                : candidate.description}
+            </div>
             <div className="flex bg-gradient-to-t from-black pb-4">
               <div>
                 <p className="text-xl">
