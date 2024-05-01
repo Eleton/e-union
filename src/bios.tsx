@@ -64,7 +64,70 @@ const Holmgren = () => (
     1.5-gradersmålet kört 🥵🥵🥵
   </p>
 );
-// const AlSahani = () => <p>Vet inte riktigt vad man ska skriva här?</p>;
+const Wiesner = () => (
+  <>
+    <p>Heeeej!</p>
+    <p>Jag är en lagom tjej på 31 jordsnurr som vill se FÖRÄNDRING! 💪</p>
+    <p>
+      Tycker om att träna, laga mat, läsa böcker, vakna tidigt, spendera tid ute
+      i naturen, meditera, kallduscha, hjälpa hemlösa, lära mig nya språk,
+      engagera mig i ideellt arbete, lösa svåra konflikter i tredje världen,
+      plocka bort luddet från tvättmaskinen, spela harpkonsert, ingripa när
+      någon utsätts för fara och mysa med min katt framför ett avsnitt av
+      Paradise Hotel 💞
+    </p>
+    <p>Gillar enbart olika ✋🏻✋🏼✋🏽✋🏾✋🏿</p>
+  </>
+);
+const AlSahani = () => <p>Vad ska man skriva på den här appen egentligen?</p>;
+const Teodorescu = () => (
+  <>
+    <p>Mitt namn är Alice.</p>
+    <p>
+      Vill du veta mer om mig kan du läsa mina krönikor i GP, följa mig på
+      Substack, lyssna på mig i debatter, kolla in Teodorescu & Suhonen på SVT
+      Play, lyssna på mitt Sommarprat och mitt Vinterprat från 2015, fråga Ivar
+      Arpi eller läsa Moderaternas Idéprogram som jag skrivit.
+    </p>
+  </>
+);
+const Kardemark = () => <p>Som Skyttedal fast gillar piskor 😼</p>;
+const Sjostedt = () => (
+  <>
+    <p>
+      Självidentifierad mysfarbror med stort hjärta söker nu lyckan annorstädes.
+    </p>
+    <p>
+      Ett ja kan vara ett nej och ett nej kan vara ett ja. Förut har jag sagt
+      nej, men nu säger jag ja. Vad säger du?
+    </p>
+    <p>Våren kom nu, visst. Härligt va, kamrat.</p>
+  </>
+);
+const Gedin = () => (
+  <p>
+    Rasister, antifeminister, transfober och skinnskalliga antisemiter
+    undanbedes ✊
+  </p>
+);
+const Karlsbro = () => (
+  <p>
+    JAG VILL LEVA I EUROPA
+    <br />
+    JAG VILL ÄLSKA OCH SJUNGA HÄR
+    <br />
+    JAG VILL SKRATTA OCH GRÅTA OCH DANSA
+    <br />
+    JAG ÄR YR OCH FÖRLORAD OCH KÄR
+    <br />
+    NÄR JAG TÄNKER PÅ HELA EUROPA
+    <br />
+    OCH FÖR OSS SOM HÖR HEMMA HÄR
+    <br />
+    -Arja Saijonmaa
+  </p>
+);
+const Bildt = () => <p>Alla förtjänar en andra chans 🫶</p>;
 
 const bios: Record<string, ReactNode> = {
   "helene-fritzon": <Fritzon />,
@@ -75,6 +138,14 @@ const bios: Record<string, ReactNode> = {
   "beatrice-timgren": <Timgren />,
   "alice-bah-kuhnke": <Kuhnke />,
   "par-holmgren": <Holmgren />,
+  "emma-wiesner": <Wiesner />,
+  "abir-al-sahlani": <AlSahani />,
+  "alice-teodorescu-mawe": <Teodorescu />,
+  "ella-kardemark": <Kardemark />,
+  "jonas-sjostedt": <Sjostedt />,
+  "hanna-gedin": <Gedin />,
+  "karin-karlsbro": <Karlsbro />,
+  "anna-maria-corazza-bildt": <Bildt />,
 };
 
 export default bios;

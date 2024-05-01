@@ -66,7 +66,7 @@ export default function Result() {
         <div className="flex justify-center p-4">
           <Link
             className="rounded bg-eu-blue-2 px-4 py-3 font-semibold text-white hover:bg-eu-blue-3"
-            href="/start"
+            href="/"
             onClick={() => {
               resetResult();
             }}

@@ -89,50 +89,94 @@ const candidates: Candidate[] = [
       "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
     swiped: "NONE",
   },
-  // {
-  //   id: "emma-wiesner",
-  //   name: "Emma Wiesner",
-  //   district: "",
-  //   party: "C",
-  //   age: 31,
-  //   occupation: "Civilingenjör",
-  //   description:
-  //     "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
-  //   swiped: "NONE",
-  // },
-  // {
-  //   id: "alice-teodorescu-mawe",
-  //   name: "Alice Teodorescu Måwe LOL",
-  //   district: "",
-  //   party: "KD",
-  //   age: 39,
-  //   occupation: "Jurist",
-  //   description:
-  //     "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
-  //   swiped: "NONE",
-  // },
-  // {
-  //   id: "jonas-sjostedt",
-  //   name: "Jonas Sjöstedt",
-  //   district: "Umeå",
-  //   party: "V",
-  //   age: 59,
-  //   occupation: "Författare",
-  //   description:
-  //     "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
-  //   swiped: "NONE",
-  // },
-  // {
-  //   id: "karin-karlsbro",
-  //   name: "Karin Karlsbro",
-  //   district: "Stockholm",
-  //   party: "L",
-  //   age: 53,
-  //   occupation: "Hållbarhetschef",
-  //   description:
-  //     "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
-  //   swiped: "NONE",
-  // },
+  {
+    id: "emma-wiesner",
+    name: "Emma Wiesner",
+    district: "",
+    party: "C",
+    age: 31,
+    occupation: "Civilingenjör",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "abir-al-sahlani",
+    name: "Abir Al-Sahlani",
+    district: "",
+    party: "C",
+    age: 47,
+    occupation: "Systemvetare",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "alice-teodorescu-mawe",
+    name: "Alice Teodorescu Måwe",
+    district: "",
+    party: "KD",
+    age: 39,
+    occupation: "Jurist",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "ella-kardemark",
+    name: "Ella Kardemark",
+    district: "Halmstad",
+    party: "KD",
+    age: 40,
+    occupation: "Kommunalråd",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "jonas-sjostedt",
+    name: "Jonas Sjöstedt",
+    district: "Umeå",
+    party: "V",
+    age: 59,
+    occupation: "Författare",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "hanna-gedin",
+    name: "Hanna Gedin",
+    district: "Umeå",
+    party: "V",
+    age: 46,
+    occupation: "Inget riktigt jobb",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "karin-karlsbro",
+    name: "Karin Karlsbro",
+    district: "Stockholm",
+    party: "L",
+    age: 53,
+    occupation: "Hållbarhetschef",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "anna-maria-corazza-bildt",
+    name: "Anna Maria Corazza Bildt",
+    district: "Stockholm",
+    party: "L",
+    age: 61,
+    occupation: "Diplomat",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
 ];
 
 export default candidates;
