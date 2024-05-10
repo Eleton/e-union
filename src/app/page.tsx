@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Start() {
   const { result } = useLocalState();
-  const href =
-    result.filter(({ swiped }) => swiped === "NONE").length !== 0
-      ? `/${result.at(-1)?.id}`
-      : "/end";
+  // const href =
+  //   result.filter(({ swiped }) => swiped === "NONE").length !== 0
+  //     ? `/${result.at(-1)?.id}`
+  //     : "/end";
   return (
     <div className="flex h-full grow flex-col gap-4 px-4 py-8 text-eu-black">
       <div>

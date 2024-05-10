@@ -8,9 +8,13 @@ const DELAY = 250;
 const ProfileCard = ({
   candidate,
   onSwipe,
+  onLoad,
+  priority = false,
 }: {
   candidate: Candidate;
   onSwipe: (direction: Direction) => void;
+  onLoad: () => void;
+  priority?: boolean;
 }) => {
   const [moving, setMoving] = useState(false);
   const [startPosition, setStartPosition] = useState<{ x: number; y: number }>({
@@ -110,6 +114,8 @@ const ProfileCard = ({
         src={`/${candidate.id}-1.jpeg`}
         alt=""
         fill
+        onLoad={onLoad}
+        priority={priority}
       />
       <div className="absolute inset-0 flex flex-col justify-end text-white">
         {open ? (
@@ -127,12 +133,19 @@ const ProfileCard = ({
                 <p>{candidate.district}</p>
                 <p>{candidate.occupation}</p>
               </div>
-              <div className="flex grow items-end justify-end">
+              <div className="flex grow justify-end">
                 <button
-                  className="flex h-8 w-8 items-center justify-center rounded-full border-2 leading-none"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border-4 leading-none"
                   onClick={() => setOpen(false)}
                 >
-                  <span>V</span>
+                  <span className="rotate-90 text-white">
+                    <Image
+                      src="/right-arrow.svg"
+                      alt={""}
+                      width="20"
+                      height="20"
+                    />
+                  </span>
                 </button>
               </div>
             </div>
@@ -146,12 +159,19 @@ const ProfileCard = ({
               <p>{candidate.district}</p>
               <p>{candidate.occupation}</p>
             </div>
-            <div className="flex grow items-end justify-end">
+            <div className="flex grow justify-end">
               <button
-                className="flex h-8 w-8 items-center justify-center rounded-full border-2 leading-none"
+                className="flex h-12 w-12 items-center justify-center rounded-full border-4 leading-none"
                 onClick={() => setOpen(true)}
               >
-                <span className="rotate-180">V</span>
+                <span className="-rotate-90 text-white">
+                  <Image
+                    src="/right-arrow.svg"
+                    alt={""}
+                    width="20"
+                    height="20"
+                  />
+                </span>
               </button>
             </div>
           </div>

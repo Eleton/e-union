@@ -26,7 +26,7 @@ const candidates: Candidate[] = [
   {
     id: "tomas-tobe",
     name: "Tomas Tobé",
-    district: "Stockholms län",
+    district: "Stockholm",
     party: "M",
     age: 46,
     occupation: "Inget riktigt jobb",
@@ -37,7 +37,7 @@ const candidates: Candidate[] = [
   {
     id: "jessica-polfjard",
     name: "Jessica Polfjärd",
-    district: "Västmanland",
+    district: "Västerås",
     party: "M",
     age: 52,
     occupation: "Inget riktigt jobb",
@@ -70,7 +70,7 @@ const candidates: Candidate[] = [
   {
     id: "alice-bah-kuhnke",
     name: "Alice Bah Kuhnke",
-    district: "",
+    district: "Bryssel",
     party: "MP",
     age: 52,
     occupation: "Mediaprofil",
@@ -81,7 +81,7 @@ const candidates: Candidate[] = [
   {
     id: "par-holmgren",
     name: "Pär Holmgren",
-    district: "",
+    district: "Uppsala",
     party: "MP",
     age: 59,
     occupation: "Meteorolog",
@@ -92,7 +92,7 @@ const candidates: Candidate[] = [
   {
     id: "emma-wiesner",
     name: "Emma Wiesner",
-    district: "",
+    district: "Stockholm",
     party: "C",
     age: 31,
     occupation: "Civilingenjör",
@@ -103,7 +103,7 @@ const candidates: Candidate[] = [
   {
     id: "abir-al-sahlani",
     name: "Abir Al-Sahlani",
-    district: "",
+    district: "Stockholm",
     party: "C",
     age: 47,
     occupation: "Systemvetare",
@@ -114,7 +114,7 @@ const candidates: Candidate[] = [
   {
     id: "alice-teodorescu-mawe",
     name: "Alice Teodorescu Måwe",
-    district: "",
+    district: "-",
     party: "KD",
     age: 39,
     occupation: "Jurist",
@@ -147,7 +147,7 @@ const candidates: Candidate[] = [
   {
     id: "hanna-gedin",
     name: "Hanna Gedin",
-    district: "Umeå",
+    district: "Malmö",
     party: "V",
     age: 46,
     occupation: "Inget riktigt jobb",

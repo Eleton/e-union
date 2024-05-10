@@ -21,11 +21,12 @@ export default function RootLayout({
         <div className="fixed inset-0 flex h-full flex-col">
           <header className="p-4">
             <Image
+              className="h-10 w-auto"
               src="/e-union-logo.svg"
               alt="Vercel Logo"
               // className="dark:invert"
-              width={160}
-              height={64}
+              width="0"
+              height="0"
               priority
             />
           </header>
