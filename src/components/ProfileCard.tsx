@@ -177,13 +177,19 @@ const ProfileCard = ({
           </div>
         )}
         {direction === "UP" && (
-          <div className="absolute inset-0 bg-sky-700/50"></div>
+          <div className="absolute inset-0 flex items-center justify-center bg-sky-700/50 text-6xl font-bold text-white">
+            WOW!
+          </div>
         )}
         {direction === "RIGHT" && (
-          <div className="absolute inset-0 bg-green-700/50"></div>
+          <div className="absolute inset-0 flex items-center justify-center bg-green-700/50 text-6xl font-bold text-white">
+            Yeah!
+          </div>
         )}
         {direction === "LEFT" && (
-          <div className="absolute inset-0 bg-red-700/50"></div>
+          <div className="absolute inset-0 flex items-center justify-center bg-red-700/50 text-6xl font-bold text-white">
+            Meh...
+          </div>
         )}
       </div>
     </article>

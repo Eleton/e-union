@@ -9,6 +9,7 @@ const partyColors: Record<Party, string> = {
   KD: "rgb(0, 94, 161)",
   MP: "rgb(83, 160, 69)",
   L: "rgb(0, 106, 179)",
+  FL: "linear-gradient(90deg, rgba(209,36,56,1) 0%, rgba(24,47,80,1) 100%)",
   PP: "",
   MED: "",
 };

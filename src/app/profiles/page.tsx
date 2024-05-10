@@ -9,6 +9,7 @@ export default function Profile() {
   const { result: candidates, handleSwipe } = useLocalState();
   const unswipedCandidates = candidates.filter((c) => c.swiped === "NONE");
   const [firstImageLoaded, setFirstImageLoaded] = useState(false);
+  const [tutorialVisible, setTutorialVisible] = useState(true);
 
   return (
     <div className="flex h-full flex-col">
@@ -50,6 +51,31 @@ export default function Profile() {
                 priority
               />
             )}
+        {tutorialVisible && firstImageLoaded && (
+          <div
+            className="absolute inset-0 flex flex-col bg-black/60 text-center text-xl text-white"
+            onClick={() => setTutorialVisible(false)}
+          >
+            <div className="flex grow flex-col items-center justify-center border-b-2 border-dotted border-white">
+              Svep up:
+              <br />
+              <span className="font-bold">WOW!</span>
+            </div>
+            <div className="flex grow items-stretch justify-between">
+              <div className="flex grow flex-col items-center justify-center border-r-2 border-dotted border-white">
+                Svep vänster:
+                <br />
+                <span className="font-bold">Meh...</span>
+              </div>
+              <div className="flex grow flex-col items-center justify-center">
+                Svep höger:
+                <br />
+                <span className="font-bold">Yeah!</span>
+              </div>
+            </div>
+            <div className="flex grow items-center justify-center border-t-2 border-dotted border-white bg-black/50"></div>
+          </div>
+        )}
       </div>
     </div>
   );

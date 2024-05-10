@@ -28,6 +28,7 @@ const config: Config = {
         kd: "rgb(0, 94, 161)",
         mp: "rgb(83, 160, 69)",
         l: "rgb(0, 106, 179)",
+        fl: "linear-gradient(90deg, rgba(209,36,56,1) 0%, rgba(24,47,80,1) 100%)",
 
         grey: "#515560",
 

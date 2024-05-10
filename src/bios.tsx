@@ -7,10 +7,11 @@ const Fritzon = () => (
       hållbarhet och, om man får välja, fred på jorden 😍
     </p>
     <p>
-      För mig är jämställdhet icke förhandlingsbart! Den som har köpt sex har
-      köpt en annan människa - oavsett var i Europa detta sker!
+      Jag tycker svenska restriktiva lagar är det vackraste som finns och allt
+      jag önskar är att resten av Europa också ska få lida, hoppsan, lyda under
+      dom 😊
     </p>
-    <p>Svep höger för ett EU med mer sammahållning, och mindre splittring 🫶</p>
+    <p>Svep höger för ett EU med mer sammahållning, och fler handhjärtan 🫶</p>
   </>
 );
 const Danielsson = () => (
@@ -20,9 +21,9 @@ const Tobe = () => (
   <>
     <p>
       Jag längtar efter att få gå mysiga kvällspromenader, hitta någon mysig
-      bänk, sitta och stirra min älskling riktigt djupt i ögonen och höra ljudet
-      av batongslag mot gängkriminella från den europeiska specialpolisen
-      blandat med fåglarnas vårkvitter 😌
+      bänk, sitta och stirra min älskling <strong>riktigt djupt</strong> i
+      ögonen och höra ljudet av batongslag mot gängkriminella från den
+      europeiska specialpolisen blandat med fåglarnas vårkvitter 😌
     </p>
     <p>
       Här har du en kille som gillar hårda tag! Men kan också växla om och vara
@@ -34,14 +35,14 @@ const Polfjard = () => <p>Rösta som du sveper 😘😉</p>;
 const Weimers = () => (
   <>
     <p>
-      Har ett primärt förhållande med min fru Svea men söker nu mellan en och
-      flera sekundära partners.
+      Första dejten: Låt oss ses på stan och ta ett järn, röra runt på stan,
+      mura in oss hemma hos mig och ha en riktig j-vla segerhelg!
     </p>
     <p>
       Uppskattar när en man kan få vara en man och en kvinna kan få vara en
       kvinna men jag tänker inte betala någon annans middag eller statsskuld.
     </p>
-    <p>Grön flagga om du har mycket skog. 🌲.</p>
+    <p>Gillar om du har mycket skog söderut. 🌲.</p>
   </>
 );
 const Timgren = () => <p>👶🐰🏃‍♀️🍷🫒👜☀️✈️✈️✈️✈️✈️🏖🇸🇪</p>;
@@ -52,7 +53,7 @@ const Kuhnke = () => (
     <p>Sida vid sida, eoner av tida</p>
     <p>Grönt är skönt och gult är fult</p>
     <p>
-      Min dröm är att bygga ett eget Eco Village, där vi odlar vår egen mat, vi
+      Min dröm är att bygga ett eget hippiesamhälle, där vi odlar vår egen mat,
       bygger våra egna hus och alla kan jobba heltid med kultur och journalistik
       💚
     </p>
@@ -60,8 +61,8 @@ const Kuhnke = () => (
 );
 const Holmgren = () => (
   <p>
-    Jag började tveka på global uppvärmning men sen du kom in i rummet så blev
-    1.5-gradersmålet kört 🥵🥵🥵
+    Är du global uppvärmning? För jordens temperatur ökade precis med 2 grader
+    när du kom in i rummet 🥵🥵🥵
   </p>
 );
 const Wiesner = () => (
@@ -91,16 +92,13 @@ const Teodorescu = () => (
     </p>
   </>
 );
-const Kardemark = () => <p>Som Skyttedal fast gillar piskor 😼</p>;
+const Kardemark = () => <p>Gillar partipiskor 😼</p>;
 const Sjostedt = () => (
   <>
     <p>
       Självidentifierad mysfarbror med stort hjärta söker nu lyckan annorstädes.
     </p>
-    <p>
-      Ett ja kan vara ett nej och ett nej kan vara ett ja. Förut har jag sagt
-      nej, men nu säger jag ja. Vad säger du?
-    </p>
+    <p>Vill arbeta för allas rätt att slippa arbeta.</p>
     <p>Våren kom nu, visst. Härligt va, kamrat.</p>
   </>
 );
@@ -111,23 +109,46 @@ const Gedin = () => (
   </p>
 );
 const Karlsbro = () => (
-  <p>
-    JAG VILL LEVA I EUROPA
-    <br />
-    JAG VILL ÄLSKA OCH SJUNGA HÄR
-    <br />
-    JAG VILL SKRATTA OCH GRÅTA OCH DANSA
-    <br />
-    JAG ÄR YR OCH FÖRLORAD OCH KÄR
-    <br />
-    NÄR JAG TÄNKER PÅ HELA EUROPA
-    <br />
-    OCH FÖR OSS SOM HÖR HEMMA HÄR
-    <br />
-    -Arja Saijonmaa
-  </p>
+  <>
+    <p>
+      JAG VILL LEVA I EUROPA
+      <br />
+      JAG VILL ÄLSKA OCH SJUNGA HÄR
+      <br />
+      JAG VILL SKRATTA OCH GRÅTA OCH DANSA
+      <br />
+      JAG ÄR YR OCH FÖRLORAD OCH KÄR
+      <br />
+      NÄR JAG TÄNKER PÅ HELA EUROPA
+      <br />
+      OCH FÖR OSS SOM HÖR HEMMA HÄR
+      <br />
+      -Arja Saijonmaa, 1982
+    </p>
+    <p>
+      Jag säger ja. Ja till allt. Det kan inte bli för mycket. Bara föreslå
+      nånting och jag säger ja. Gemensam ekonomi, gemensam tomt, gemensamt
+      övervakningssystem. Jag säger ja 👍
+    </p>
+  </>
 );
-const Bildt = () => <p>Alla förtjänar en andra chans 🫶</p>;
+const Bildt = () => <p>Säg inte till min man att ni hitta mig här 🤫😉🤭</p>;
+const Emanuel = () => (
+  <>
+    <p>Tjabba tjena. Mitt namn är Jan Emanuel.</p>
+    <p>Jag är ny här på appen, men har varit väldigt aktiv förut.</p>
+    <p>
+      På fritiden gillar jag att starta nya företag, krama djur, bränna gummi,
+      vinna dokusåpor med mera. Jag gillar egentligen inte att skryta men jag
+      anställer gärna någon som skryter åt mig.
+    </p>
+    <p>
+      Söker dig som är en lättlurad stackare som tror på att allt var bättre
+      förr.
+    </p>
+  </>
+);
+const Skyttedal = () => <p>420</p>;
 
 const bios: Record<string, ReactNode> = {
   "helene-fritzon": <Fritzon />,
@@ -146,6 +167,8 @@ const bios: Record<string, ReactNode> = {
   "hanna-gedin": <Gedin />,
   "karin-karlsbro": <Karlsbro />,
   "anna-maria-corazza-bildt": <Bildt />,
+  "jan-emanuel": <Emanuel />,
+  "sara-skyttedal": <Skyttedal />,
 };
 
 export default bios;

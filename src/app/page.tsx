@@ -11,15 +11,26 @@ export default function Start() {
   //     : "/end";
   return (
     <div className="flex h-full grow flex-col gap-4 px-4 py-8 text-eu-black">
-      <div>
-        <h1 className="text-center text-2xl font-bold">Aimans Valkompass</h1>
+      <div className="flex flex-col gap-2">
+        <h1 className="text-center text-4xl font-bold">Aimans Valkompass</h1>
         <h2 className="text-center text-xl italic">EU-Valet 2024 Edition</h2>
       </div>
 
-      <p className="grow">
-        Det är EU-val snart och du behöver ta reda på vem du ska rösta på.
-        You&apos;re welcome.
-      </p>
+      <div className="flex grow flex-col gap-2 text-center">
+        <p>Den 9:e juni är det val till EU-parlamentet!</p>
+        <p>
+          Vet du inte vad du ska rösta på? Ingen fara,{" "}
+          <em>dom flesta har ingen aning!</em>
+        </p>
+        <p>
+          Du har dock tur! Du står just nu inför möjligheten att göra{" "}
+          <strong>Aimans EU-Valkompass</strong>! Detta kommer göra dig bättre
+          förberedd än i stort sett alla dina vänner!
+        </p>
+        <p>
+          Starta genom att trycka på &quot;<strong>STARTA</strong>&quot;
+        </p>
+      </div>
       <div className="flex justify-center">
         <Link
           className="rounded bg-eu-blue-2 px-4 py-3 font-semibold text-white hover:bg-eu-blue-3"

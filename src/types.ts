@@ -10,12 +10,9 @@ export type Party =
   | "KD"
   | "V"
   | "L"
+  | "FL"
   | "PP"
   | "MED";
-
-// export type CompassState = {
-//   randomNumber: number;
-// };
 
 export type Direction = "NONE" | "RIGHT" | "LEFT" | "UP";
 

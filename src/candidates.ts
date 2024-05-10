@@ -29,7 +29,7 @@ const candidates: Candidate[] = [
     district: "Stockholm",
     party: "M",
     age: 46,
-    occupation: "Inget riktigt jobb",
+    occupation: "Egenföretagare",
     description:
       "Odio morbi quis commodo odio aenean sed adipiscing. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus. Condimentum lacinia quis vel eros donec.",
     swiped: "NONE",
@@ -51,7 +51,7 @@ const candidates: Candidate[] = [
     district: "Hammarö",
     party: "SD",
     age: 41,
-    occupation: "Inget riktigt jobb",
+    occupation: "Seriepartist",
     description:
       "Odio morbi quis commodo odio aenean sed adipiscing. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Magna sit amet purus gravida quis blandit turpis cursus. Condimentum lacinia quis vel eros donec.",
     swiped: "NONE",
@@ -117,7 +117,7 @@ const candidates: Candidate[] = [
     district: "-",
     party: "KD",
     age: 39,
-    occupation: "Jurist",
+    occupation: "Jurist, journalist & debattör",
     description:
       "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
     swiped: "NONE",
@@ -150,7 +150,7 @@ const candidates: Candidate[] = [
     district: "Malmö",
     party: "V",
     age: 46,
-    occupation: "Inget riktigt jobb",
+    occupation: "Jurist",
     description:
       "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
     swiped: "NONE",
@@ -173,6 +173,28 @@ const candidates: Candidate[] = [
     party: "L",
     age: 61,
     occupation: "Diplomat",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "jan-emanuel",
+    name: "Jan Emanuel",
+    district: "Stockholm",
+    party: "FL",
+    age: 50,
+    occupation: "Riktig Sosse™",
+    description:
+      "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
+    swiped: "NONE",
+  },
+  {
+    id: "sara-skyttedal",
+    name: "Sara Skyttedal",
+    district: "Stockholm",
+    party: "FL",
+    age: 37,
+    occupation: "Provokatör",
     description:
       "Orci sagittis eu volutpat odio facilisis mauris sit. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. In ornare quam viverra orci sagittis eu volutpat odio. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. In hac habitasse platea dictumst vestibulum. In tellus integer feugiat scelerisque varius morbi.",
     swiped: "NONE",

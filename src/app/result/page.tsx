@@ -23,24 +23,46 @@ const getPartyScore = (candidates: Candidate[], party: Party) => {
   }, 0);
 };
 
+const PartyBar = ({ value, party }: { value: number; party: Party }) => {
+  if (value >= 200) {
+    return (
+      <div
+        className="absolute -bottom-1 -top-1 left-0 animate-[pulse_500ms_ease-in-out_infinite]"
+        style={{
+          width: `${value / 2 || 2}%`,
+          background: partyColors[party],
+        }}
+      />
+    );
+  }
+  return (
+    <div
+      className="absolute bottom-0 left-0 top-0"
+      style={{
+        width: `${value / 2 || 2}%`,
+        background: partyColors[party],
+      }}
+    />
+  );
+};
+
 const PartyStat = ({ value, party }: { value: number; party: Party }) => (
-  <div>
+  <div className="text-sm font-bold text-black">
+    {party} - {value}%
     <div className="relative h-4">
+      <PartyBar value={value} party={party} />
       <div
         className="absolute bottom-0 left-0 top-0"
         style={{
           width: `${value / 2 || 2}%`,
-          backgroundColor: partyColors[party],
+          background: partyColors[party],
         }}
       />
       <div
         className="absolute h-4 w-1/2 opacity-15"
-        style={{ backgroundColor: partyColors[party] }}
+        style={{ background: partyColors[party] }}
       />
       <div className="absolute h-4 w-1/2 border border-black/30" />
-      <div className="absolute left-1/2 -translate-y-[2px] pl-2 text-sm text-black/80">
-        {party} - {value}%
-      </div>
     </div>
   </div>
 );
@@ -50,8 +72,8 @@ export default function Result() {
 
   return (
     <section className="flex h-full flex-col justify-between">
-      <div className="flex h-full flex-col">
-        <div className="flex flex-col gap-4 px-4">
+      <div className="flex flex-col">
+        <div className="flex flex-col gap-2 px-4">
           <PartyStat value={getPartyScore(candidates, "S")} party="S" />
           <PartyStat value={getPartyScore(candidates, "M")} party="M" />
           <PartyStat value={getPartyScore(candidates, "SD")} party="SD" />
@@ -60,7 +82,18 @@ export default function Result() {
           <PartyStat value={getPartyScore(candidates, "KD")} party="KD" />
           <PartyStat value={getPartyScore(candidates, "V")} party="V" />
           <PartyStat value={getPartyScore(candidates, "L")} party="L" />
+          <PartyStat value={getPartyScore(candidates, "FL")} party="FL" />
         </div>
+      </div>
+      <div className="p-4 text-center text-black">
+        Bra resultat! Nu är du redo att ta dig an{" "}
+        <a
+          className="font-semibold text-eu-blue-2 underline"
+          href="https://elections.europa.eu/sv/"
+        >
+          EU-valet den 9:e juni
+        </a>
+        !
       </div>
       <div>
         <div className="flex justify-center p-4">
