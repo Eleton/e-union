@@ -91,23 +91,62 @@ const ProfileCard = ({
         }
         setMoving(false);
       }}
-      // onMouseDown={(e) => {
-      //   e.preventDefault();
-      //   setMoving(true);
-      //   setPosition({ x: 0, y: 0 });
-      //   setStartPosition({ x: e.screenX, y: e.screenY });
-      // }}
-      // onMouseMove={(e) => {
-      //   if (moving) {
-      //     setPosition({
-      //       x: e.screenX - startPosition.x,
-      //       y: e.screenY - startPosition.y,
-      //     });
-      //   }
-      // }}
-      // onMouseUp={() => {
-      //   setMoving(false);
-      // }}
+      onMouseDown={(e) => {
+        setMoving(true);
+        setPosition({ x: 0, y: 0 });
+        setStartPosition({ x: e.screenX, y: e.screenY });
+      }}
+      onMouseMove={(e) => {
+        const { width, height } = (
+          e.target as HTMLDivElement
+        ).getBoundingClientRect();
+        if (moving) {
+          setPosition({
+            x: e.screenX - startPosition.x,
+            y: e.screenY - startPosition.y,
+          });
+          if (position.y < -height / 4) {
+            setDirection("UP");
+          } else if (position.x > width / 4) {
+            setDirection("RIGHT");
+          } else if (position.x < -width / 4) {
+            setDirection("LEFT");
+          } else {
+            setDirection("NONE");
+          }
+        }
+      }}
+      onMouseUp={(e) => {
+        const { width, height } = (
+          e.target as HTMLDivElement
+        ).getBoundingClientRect();
+        setMoving(false);
+        switch (direction) {
+          case "LEFT": {
+            setPosition({ x: -2 * width, y: 0 });
+            setStartPosition({ x: -2 * width, y: 0 });
+            setTimeout(() => onSwipe("LEFT"), DELAY);
+            break;
+          }
+          case "RIGHT": {
+            setPosition({ x: 2 * width, y: 0 });
+            setStartPosition({ x: 2 * width, y: 0 });
+            setTimeout(() => onSwipe("RIGHT"), DELAY);
+            break;
+          }
+          case "UP": {
+            setPosition({ x: 0, y: -2 * height });
+            setStartPosition({ x: 0, y: -2 * height });
+            setTimeout(() => onSwipe("UP"), DELAY);
+            break;
+          }
+          case "NONE": {
+            setPosition({ x: 0, y: 0 });
+            setStartPosition({ x: 0, y: 0 });
+          }
+        }
+        setMoving(false);
+      }}
     >
       <Image
         className="object-cover"
@@ -177,17 +216,17 @@ const ProfileCard = ({
           </div>
         )}
         {direction === "UP" && (
-          <div className="absolute inset-0 flex items-center justify-center bg-sky-700/50 text-6xl font-bold text-white">
+          <div className="absolute inset-0 flex select-none items-center justify-center bg-sky-700/50 text-6xl font-bold text-white">
             WOW!
           </div>
         )}
         {direction === "RIGHT" && (
-          <div className="absolute inset-0 flex items-center justify-center bg-green-700/50 text-6xl font-bold text-white">
+          <div className="absolute inset-0 flex select-none items-center justify-center bg-green-700/50 text-6xl font-bold text-white">
             Yeah!
           </div>
         )}
         {direction === "LEFT" && (
-          <div className="absolute inset-0 flex items-center justify-center bg-red-700/50 text-6xl font-bold text-white">
+          <div className="absolute inset-0 flex select-none items-center justify-center bg-red-700/50 text-6xl font-bold text-white">
             Meh...
           </div>
         )}

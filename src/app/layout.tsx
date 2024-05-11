@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="fixed inset-0 flex h-full flex-col">
+        <div className="fixed inset-0 mx-auto flex h-full max-w-[600px] select-none flex-col">
           <header className="p-4">
             <Image
               className="h-10 w-auto"
@@ -31,9 +31,6 @@ export default function RootLayout({
             />
           </header>
           <main className="grow">{children}</main>
-          {/* <footer className="p-4 py-2 text-sm">
-            Developed by Aiman Josefsson
-          </footer> */}
         </div>
       </body>
     </html>

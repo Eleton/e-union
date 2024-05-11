@@ -10,7 +10,7 @@ export default function Start() {
   //     ? `/${result.at(-1)?.id}`
   //     : "/end";
   return (
-    <div className="flex h-full grow flex-col gap-4 px-4 py-8 text-eu-black">
+    <div className="flex h-full grow flex-col gap-4 px-4 py-4 text-eu-black">
       <div className="flex flex-col gap-2">
         <h1 className="text-center text-4xl font-bold">Aimans Valkompass</h1>
         <h2 className="text-center text-xl italic">EU-Valet 2024 Edition</h2>
