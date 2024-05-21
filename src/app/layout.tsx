@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { headers } from "next/headers";
 import Image from "next/image";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "EUnion",
-  description: "I love Europe <3",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "EUnion",
+    description: "I love Europe <3",
+    metadataBase: new URL(`https://${headers().get("host")}`),
+  };
+}
 
 export default function RootLayout({
   children,
