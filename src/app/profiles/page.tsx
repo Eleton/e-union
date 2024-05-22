@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import ProfileCard from "@/components/ProfileCard";
 import useLocalState from "@/hooks/useLocalState";
 import { useState } from "react";
@@ -73,7 +74,37 @@ export default function Profile() {
                 <span className="font-bold">Yeah!</span>
               </div>
             </div>
-            <div className="flex grow items-center justify-center border-t-2 border-dotted border-white bg-black/50"></div>
+            <div className="flex grow flex-col justify-center border-t-2 border-dotted border-white bg-black/50">
+              <div className="flex grow items-center justify-center">
+                <span className="font-bold">Klicka för att starta!</span>
+              </div>
+              <div className="flex items-end justify-center">
+                <div className="flex grow p-4">
+                  <div className="select-none text-start text-base text-transparent">
+                    <p className="text-xl">
+                      <strong>.</strong>
+                    </p>
+                    <p>.</p>
+                    <p className="text-transparent">.</p>
+                  </div>
+                  <div className="flex grow items-start justify-end">
+                    <div>
+                      <button className="flex h-12 w-12 items-center justify-center rounded-full border-4 leading-none">
+                        <span className="-rotate-90">
+                          <Image
+                            src="/right-arrow.svg"
+                            alt={""}
+                            width="20"
+                            height="20"
+                          />
+                        </span>
+                      </button>
+                      <div className="text-base">Bio</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </div>
